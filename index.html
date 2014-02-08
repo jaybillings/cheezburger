@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cheezburger Employee Browser</title>
+	<link rel="stylesheet" href="stylesheets/reset.css" media="all" />
+	<link rel="stylesheet" href="stylesheets/cheezburger.css" media="all" />
+	<script src="js/angular.js"></script>
+	<!-- script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular.js"></script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-resource.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-route.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/services.js"></script>
+	
+</head>
+<body ng-app="cheezApp" ng-controller="EmployeeListCtrl">
+	<header>
+		<h1>Cheezburger Employee Browser</h1>
+		<ol>
+			<li><button type="button">List</button></li>
+			<li><button type="button">Grid</button></li>
+		</ol>	
+	</header>
+	<main>
+		<div id="content">
+			<ul>
+				<li ng-repeat="e in employees">
+					<p ng-bind="e.FirstName"></p>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<footer>
+		<p id="copy">Copyright &copy; 2014 Jessica Billings &bull; All rights reserved.</p>
+	</footer>
+</body>
+</html>

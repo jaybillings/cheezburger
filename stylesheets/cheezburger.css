@@ -1,0 +1,38 @@
+body {
+	font: 100%/1.5 "American Typewriter", verdana, arial, helvetica, sans-serif;
+	color: #333333;
+	background: #F4F4F4;
+}
+
+header {
+	height: 150px;
+	background: #F13A4B;
+	position: relative;
+	padding: 10px 10px 0;
+}
+
+header h1 {
+	font-size: 2.0em;
+	margin-top: 60px;
+}
+
+header ol {
+
+}
+
+header li {
+	display: inline-block;
+}
+
+header button {
+	width: 100px;
+	height: 30px;
+	font-size: 1.1em;
+}
+
+footer {
+	height: 150px;
+	color: #F4F4F4;
+	background: #3D3C3E;
+	padding: 10px 10px 0;
+}
