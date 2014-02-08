@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="cheezApp">
 <head>
 	<title>Cheezburger Employee Browser</title>
 	<link rel="stylesheet" href="stylesheets/reset.css" media="all" />
@@ -12,7 +12,7 @@
 	<script src="js/services.js"></script>
 	
 </head>
-<body ng-app="cheezApp" ng-controller="EmployeeListCtrl">
+<body>
 	<header>
 		<h1>Cheezburger Employee Browser</h1>
 		<ol>
@@ -21,13 +21,7 @@
 		</ol>	
 	</header>
 	<main>
-		<div id="content">
-			<ul>
-				<li ng-repeat="e in employees">
-					<p ng-bind="e.FirstName"></p>
-				</li>
-			</ul>
-		</div>
+		<div ng-view></div>
 	</main>
 	<footer>
 		<p id="copy">Copyright &copy; 2014 Jessica Billings &bull; All rights reserved.</p>

@@ -1,6 +1,6 @@
 var cheezApp = angular.module('cheezApp', ['ngRoute', 'cheezAppControllers', 'cheezAppServices']);
 
-/*cheezApp.config(['$routeProvider',
+cheezApp.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider.
 		when('/employees', {
@@ -14,19 +14,26 @@ var cheezApp = angular.module('cheezApp', ['ngRoute', 'cheezAppControllers', 'ch
 		otherwise({
 			redirectTo: '/employees'
 		});
-}]);*/
+}]);
 
 var cheezAppControllers = angular.module('cheezAppControllers', []);
 
-cheezAppControllers.controller('EmployeeListCtrl', ['$scope', 'Record',
-	function($scope, Record) {
-		$scope.employees = Record.fetch();
-		console.log($scope.employees);
+cheezAppControllers.controller('EmployeeListCtrl', ['$scope', '$http', 'Record',
+	function($scope, $http, Record) {
+		$scope.employees = Record.get();
 		$scope.orderProp = 'FirstName';
-}]);
+		window.jsonp_callback = function(data) {
+			$scope.employees = data;
+		}
+	}
+]);
 
-cheezAppControllers.controller('EmployeeDetailCtrl', ['$scope', '$routeParams', 'Record',
-	function($scope, $routeParams, Record) {
-		$scope.employee = Record.jsonp('http://fe.interview.cheezburger.com/employees/:emplId?callback=JSON_CALLBACK',
-									   {emplId: $routeParams.emplId});
-}]);
+cheezAppControllers.controller('EmployeeDetailCtrl', ['$scope', '$routeParams', '$http',
+	function($scope, $routeParams, $http) {
+		$http.jsonp('http://fe.interview.cheezburger.com/employees/' + $routeParams.emplId)
+			.success(function(data) {
+			//$scope.employee = data.User;
+			console.log('??');
+		});
+	}
+]);

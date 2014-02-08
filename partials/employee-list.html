@@ -1,3 +1,8 @@
 <div id="records" class="records">
-	<div class="employee" ng-repeat="e in employees | orderBy:orderProp">{{e}} {{e.ID}}</div>
+	<div class="employee" id="employee-{{e.Id}}" ng-repeat="e in employees | orderBy:orderProp">
+		<img ng-src="{{e.AvatarUrl}}" alt="{{e.FirstName}} {{e.LastName}}"/>
+		<span>{{e.FirstName}} {{e.LastName}}</span>
+		<span>{{e.Location}}</span>
+		<a href="#/employees/{{e.Id}}">Detail View</a>
+	</div>
 </div>
