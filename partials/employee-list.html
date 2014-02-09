@@ -1,8 +1,20 @@
-<div id="records" class="records">
+<div class="records">
 	<div class="employee" id="employee-{{e.Id}}" ng-repeat="e in employees | orderBy:orderProp">
-		<img ng-src="{{e.AvatarUrl}}" alt="{{e.FirstName}} {{e.LastName}}"/>
-		<span>{{e.FirstName}} {{e.LastName}}</span>
-		<span>{{e.Location}}</span>
-		<a href="#/employees/{{e.Id}}">Detail View</a>
+		<div class="employee-summary">
+			<img ng-src="{{e.AvatarUrl}}" alt="{{e.FirstName}} {{e.LastName}}"/>
+			<span>{{e.FirstName}} {{e.LastName}}</span>
+			<span>{{e.Location}}</span>
+			<button ng-click="toggleModal(e.Id)">Show Details</button>
+		</div>
+		<modal-dialog>
+			<div>
+				<h2>{{employee.User.FirstName}} {{employee.User.LastName}}</h2>
+				<img ng-src="{{employee.User.AvatarUrl}}" alt="{{employee.User.FirstName}} {{employee.User.LastName}}">
+				<p><span class="stat">Location:</span> {{employee.User.Location}}</p>
+				<p><span class="stat">Likes:</span> {{employee.Details.Likes}}</p>
+				<p><span class="stat">Dislikes:</span> {{employee.Details.Dislikes}}</p>
+				<p><span class="stat">Favorite quote:</span> {{employee.Details['Favorite Quote']}}</p>
+			</div>
+		</modal-dialog>
 	</div>
 </div>

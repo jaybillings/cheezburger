@@ -1,3 +1,8 @@
-<modal-dialog show="modalShown">
-	<div id="employee-detail"></div>
-</modal-dialog>
+<div class="ng-modal">
+	<div class='ng-modal-overlay'></div>
+	<div class='ng-modal-dialog'>
+	    <div class='ng-modal-close' ng-click='hideModal()'>[Close]</div>
+	    <div class='ng-modal-dialog-content' ng-transclude></div>
+	</div>
+</div>
+

@@ -7,33 +7,48 @@ cheezApp.config(['$routeProvider',
 			templateUrl: 'partials/employee-list.html',
 			controller: 'EmployeeListCtrl'
 		}).
-		when('/employees/:emplId', {
-			templateUrl: 'partials/employee-detail.html',
-			controller: 'EmployeeDetailCtrl'
-		}).
 		otherwise({
-			redirectTo: '/employees'
+			redirectTo: '/employees',
+			controller: 'EmployeeListCtrl'
 		});
 }]);
 
 var cheezAppControllers = angular.module('cheezAppControllers', []);
 
-cheezAppControllers.controller('EmployeeListCtrl', ['$scope', '$http', 'Record',
-	function($scope, $http, Record) {
-		$scope.employees = Record.get();
+cheezAppControllers.controller('EmployeeListCtrl', ['$scope', 'EmployeeList',
+	function($scope, EmployeeList) {
+		// Get all employee info
+		$scope.employees = EmployeeList.get();
 		$scope.orderProp = 'FirstName';
 		window.jsonp_callback = function(data) {
 			$scope.employees = data;
 		}
+		
+		// Toggle detail view
+		$scope.toggleModal = function(id) {
+			$scope.employee = EmployeeList.get({emplId: id});
+			window.jsonp_callback = function(data) {
+				$scope.employee = data;
+				$(".ng-modal-dialog").show();
+				$(".ng-modal-overlay").show();
+			}
+		};
 	}
 ]);
 
-cheezAppControllers.controller('EmployeeDetailCtrl', ['$scope', '$routeParams', '$http',
-	function($scope, $routeParams, $http) {
-		$http.jsonp('http://fe.interview.cheezburger.com/employees/' + $routeParams.emplId)
-			.success(function(data) {
-			//$scope.employee = data.User;
-			console.log('??');
-		});
+cheezApp.directive('modalDialog', function() {
+	return {
+		restrict: 'E',
+		scope: {},
+		replace: true,
+		transclude: true,
+		link: function(scope, element) {
+			scope.hideModal = function() {
+				//scope.show = false;
+				$(".ng-modal-dialog").hide();
+				$(".ng-modal-overlay").hide();
+			};
+		},
+		templateUrl: 'partials/employee-detail.html'
 	}
-]);
+});
