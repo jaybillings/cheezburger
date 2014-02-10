@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="cheezApp">
+<html lang="en" ng-app="cheezApp" ng-controller="EmployeeListCtrl">
 <head>
+	<meta charset="UTF-8">
 	<title>Cheezburger Employee Browser</title>
-	<link rel="stylesheet" href="stylesheets/reset.css" media="all" />
-	<link rel="stylesheet" href="stylesheets/cheezburger.css" media="all" />
+	<link rel="stylesheet" href="sass/stylesheets/main.css" media="all" />
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src="js/angular.js"></script>
-	<!-- script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular.js"></script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-resource.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-route.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/services.js"></script>
-	
 </head>
 <body>
 	<header>
 		<h1>Cheezburger Employee Browser</h1>
 		<ol id="display-buttons">
-			<li><button id="list" type="button" title="Click for list view"></button></li>
-			<li><button id="grid" type="button" title="Click for grid view"></button></li>
+			<li><button id="list" type="button" title="Click for list view" ng-click="toggleView(false)"></button></li>
+			<li><button id="grid" type="button" title="Click for grid view" ng-click="toggleView(true)"></button></li>
 		</ol>	
 	</header>
 	<main>

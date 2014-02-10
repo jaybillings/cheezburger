@@ -1,0 +1,160 @@
+2014-02-09 17:14:03    create stylesheets/main.css 
+2014-02-09 17:15:11 overwrite stylesheets/main.css 
+2014-02-09 17:15:32     error sass/main.scss (Line 1: File to import not found or unreadable: reset.scss.
+Load paths:
+  /Users/jellyfish/code/cheezburger/sass/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /vendor/assets/stylesheets)
+2014-02-09 17:15:32 overwrite stylesheets/main.css 
+2014-02-09 17:16:00     error sass/main.scss (Line 2: File to import not found or unreadable: colors.scss.
+Load paths:
+  /Users/jellyfish/code/cheezburger/sass/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /vendor/assets/stylesheets)
+2014-02-09 17:16:00 overwrite stylesheets/main.css 
+2014-02-09 17:16:15 identical stylesheets/main.css 
+2014-02-09 17:18:26 identical stylesheets/main.css 
+2014-02-09 17:21:37     error sass/main.scss (Line 6: Undefined variable: "$textblack".)
+2014-02-09 17:21:37 overwrite stylesheets/main.css 
+2014-02-09 17:23:07 overwrite stylesheets/main.css 
+2014-02-09 17:23:35 identical stylesheets/main.css 
+2014-02-09 17:24:58 overwrite stylesheets/main.css 
+2014-02-09 17:25:13 identical stylesheets/main.css 
+2014-02-09 17:26:11 overwrite stylesheets/main.css 
+2014-02-09 17:27:44 identical stylesheets/main.css 
+2014-02-09 17:28:09 overwrite stylesheets/main.css 
+2014-02-09 17:31:25     error sass/main.scss (Line 3: File to import not found or unreadable: mixins.scss.
+Load paths:
+  /Users/jellyfish/code/cheezburger/sass/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /vendor/assets/stylesheets)
+2014-02-09 17:31:25 overwrite stylesheets/main.css 
+2014-02-09 17:31:35     error sass/main.scss (Line 3: File to import not found or unreadable: _mixins.scss.
+Load paths:
+  /Users/jellyfish/code/cheezburger/sass/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /vendor/assets/stylesheets)
+2014-02-09 17:31:35 overwrite stylesheets/main.css 
+2014-02-09 17:31:53 overwrite stylesheets/main.css 
+2014-02-09 17:32:37 overwrite stylesheets/main.css 
+2014-02-09 17:35:28 overwrite stylesheets/main.css 
+2014-02-09 17:35:33 identical stylesheets/main.css 
+2014-02-09 17:36:15 overwrite stylesheets/main.css 
+2014-02-09 17:36:31 overwrite stylesheets/main.css 
+2014-02-09 17:43:11 overwrite stylesheets/main.css 
+2014-02-09 17:55:28 identical stylesheets/main.css 
+2014-02-09 17:56:00 overwrite stylesheets/main.css 
+2014-02-09 17:56:21 identical stylesheets/main.css 
+2014-02-09 17:56:49 identical stylesheets/main.css 
+2014-02-09 17:57:13 identical stylesheets/main.css 
+2014-02-09 17:59:51 overwrite stylesheets/main.css 
+2014-02-09 18:00:51 overwrite stylesheets/main.css 
+2014-02-09 18:01:01 overwrite stylesheets/main.css 
+2014-02-09 18:01:09 identical stylesheets/main.css 
+2014-02-09 18:01:21 identical stylesheets/main.css 
+2014-02-09 18:01:31 overwrite stylesheets/main.css 
+2014-02-09 18:02:12 overwrite stylesheets/main.css 
+2014-02-09 18:03:06 overwrite stylesheets/main.css 
+2014-02-09 18:03:58     error sass/main.scss (Line 69: Invalid CSS after "...border-gradient": expected "{", was "(left, #ccc, $b...")
+2014-02-09 18:03:58 overwrite stylesheets/main.css 
+2014-02-09 18:04:59 overwrite stylesheets/main.css 
+2014-02-09 18:06:13 overwrite stylesheets/main.css 
+2014-02-09 18:10:44     error sass/main.scss (Line 69: Invalid CSS after "...nt(3px, $black)": expected "}", was "img {")
+2014-02-09 18:10:44 overwrite stylesheets/main.css 
+2014-02-09 18:10:47 overwrite stylesheets/main.css 
+2014-02-09 18:13:56 overwrite stylesheets/main.css 
+2014-02-09 18:15:38 overwrite stylesheets/main.css 
+2014-02-09 18:15:51 overwrite stylesheets/main.css 
+2014-02-09 18:17:02 overwrite stylesheets/main.css 
+2014-02-09 18:17:57     error sass/main.scss (Line 14 of sass/_mixins.scss: Invalid CSS after "...olor1, $color2=": expected expression (e.g. 1px, bold), was ") 1 100%;")
+2014-02-09 18:17:57 overwrite stylesheets/main.css 
+2014-02-09 18:18:12 identical stylesheets/main.css 
+2014-02-09 18:19:25 identical stylesheets/main.css 
+2014-02-09 18:19:33 overwrite stylesheets/main.css 
+2014-02-09 18:20:16 identical stylesheets/main.css 
+2014-02-09 18:20:55     error sass/main.scss (Line 11 of sass/_mixins.scss: Invalid CSS after "	-webkit-gradient": expected "{", was "(radial, left b...")
+2014-02-09 18:20:55 overwrite stylesheets/main.css 
+2014-02-09 18:21:10 overwrite stylesheets/main.css 
+2014-02-09 18:21:36     error sass/main.scss (Line 12 of sass/_mixins.scss: Expected a color. Got: left)
+2014-02-09 18:21:36 overwrite stylesheets/main.css 
+2014-02-09 18:21:44 overwrite stylesheets/main.css 
+2014-02-09 18:29:37 overwrite stylesheets/main.css 
+2014-02-09 18:32:00 overwrite stylesheets/main.css 
+2014-02-09 18:32:06 overwrite stylesheets/main.css 
+2014-02-09 18:32:16 overwrite stylesheets/main.css 
+2014-02-09 18:32:25 overwrite stylesheets/main.css 
+2014-02-09 18:33:27 overwrite stylesheets/main.css 
+2014-02-09 18:34:52 overwrite stylesheets/main.css 
+2014-02-09 18:41:46 identical stylesheets/main.css 
+2014-02-09 18:45:39 overwrite stylesheets/main.css 
+2014-02-09 18:45:54 overwrite stylesheets/main.css 
+2014-02-09 18:46:11 overwrite stylesheets/main.css 
+2014-02-09 18:46:22 overwrite stylesheets/main.css 
+2014-02-09 18:46:39 overwrite stylesheets/main.css 
+2014-02-09 18:46:58 identical stylesheets/main.css 
+2014-02-09 18:47:09 identical stylesheets/main.css 
+2014-02-09 18:48:22 identical stylesheets/main.css 
+2014-02-09 18:50:02 overwrite stylesheets/main.css 
+2014-02-09 18:50:13 identical stylesheets/main.css 
+2014-02-09 18:50:39 overwrite stylesheets/main.css 
+2014-02-09 18:51:01 overwrite stylesheets/main.css 
+2014-02-09 18:56:12 overwrite stylesheets/main.css 
+2014-02-09 18:57:33 overwrite stylesheets/main.css 
+2014-02-09 18:58:00     error sass/main.scss (Line 58: Invalid CSS after "...details-toggle ": expected "}", was "{")
+2014-02-09 18:58:00 overwrite stylesheets/main.css 
+2014-02-09 18:58:25 overwrite stylesheets/main.css 
+2014-02-09 19:00:15 overwrite stylesheets/main.css 
+2014-02-09 19:00:19 identical stylesheets/main.css 
+2014-02-09 19:01:09 overwrite stylesheets/main.css 
+2014-02-09 19:01:41 identical stylesheets/main.css 
+2014-02-09 19:02:09 identical stylesheets/main.css 
+2014-02-09 19:02:47 identical stylesheets/main.css 
+2014-02-09 19:02:52 overwrite stylesheets/main.css 
+2014-02-09 19:03:33 overwrite stylesheets/main.css 
+2014-02-09 19:05:26 overwrite stylesheets/main.css 
+2014-02-09 19:06:46 overwrite stylesheets/main.css 
+2014-02-09 19:08:18 overwrite stylesheets/main.css 
+2014-02-09 19:14:52 overwrite stylesheets/main.css 
+2014-02-09 19:31:26 overwrite stylesheets/main.css 
+2014-02-09 19:33:27 overwrite stylesheets/main.css 
+2014-02-09 19:34:39 overwrite stylesheets/main.css 
+2014-02-09 19:36:17 overwrite stylesheets/main.css 
+2014-02-09 19:38:07 identical stylesheets/main.css 
+2014-02-09 19:39:53 overwrite stylesheets/main.css 
+2014-02-09 19:40:18 overwrite stylesheets/main.css 
+2014-02-09 19:40:29 identical stylesheets/main.css 
+2014-02-09 19:40:39 overwrite stylesheets/main.css 
+2014-02-09 19:40:48 overwrite stylesheets/main.css 
+2014-02-09 19:40:54 overwrite stylesheets/main.css 

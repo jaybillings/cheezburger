@@ -1,0 +1,257 @@
+/* line 1, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 10, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 14, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 18, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 22, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 26, ../sass/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 31, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 5, ../sass/main.scss */
+body {
+  font: 100%/1.5 "American Typewriter", verdana, arial, helvetica, sans-serif;
+  color: #333333;
+  background: #f4f4f4;
+}
+
+/* line 11, ../sass/main.scss */
+header {
+  height: 150px;
+  background: #f13a4b;
+  position: relative;
+  padding: 10px 10px 0;
+  border-bottom: 3px solid #3d3c3e;
+}
+/* line 17, ../sass/main.scss */
+header h1 {
+  font-size: 2.5em;
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+}
+/* line 23, ../sass/main.scss */
+header ol#display-buttons {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  padding: 10px;
+}
+/* line 28, ../sass/main.scss */
+header ol#display-buttons li {
+  display: inline-block;
+}
+/* line 32, ../sass/main.scss */
+header button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+}
+/* line 37, ../sass/main.scss */
+header button#list {
+  background: url(/img/icons.png) 0% no-repeat;
+}
+/* line 40, ../sass/main.scss */
+header button#grid {
+  background: url(/img/icons.png) 100% no-repeat;
+}
+
+/* line 46, ../sass/main.scss */
+button.details-toggle {
+  background-color: #22bdaf;
+  border: 2px solid #3d3c3e;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  font: 70%/1.5 "American Typewriter", verdana, arial, helvetica, sans-serif;
+  box-shadow: 1px 1px 2px #3d3c3e;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+/* line 57, ../sass/main.scss */
+.list .employee {
+  margin: 0 10%;
+}
+/* line 60, ../sass/main.scss */
+.list button {
+  padding: 5px 15px;
+}
+/* line 63, ../sass/main.scss */
+.list .employee-summary {
+  padding: 20px;
+  border-top: 2px solid #22bdaf;
+  width: 90%;
+}
+/* line 67, ../sass/main.scss */
+.list .employee-summary.first {
+  border: none;
+}
+/* line 70, ../sass/main.scss */
+.list .employee-summary img {
+  width: 64px;
+  height: 64px;
+  margin: 0 25px 0 15%;
+  border: 1px solid #3d3c3e;
+}
+/* line 76, ../sass/main.scss */
+.list .employee-summary span {
+  font-size: 1.2em;
+  padding: 0 10px;
+  display: inline-block;
+  width: 160px;
+  text-align: center;
+  vertical-align: 100%;
+}
+
+/* line 87, ../sass/main.scss */
+.grid {
+  margin: 2% 5%;
+  position: relative;
+}
+/* line 90, ../sass/main.scss */
+.grid .employee {
+  width: 29%;
+  height: 150px;
+  display: inline-block;
+  margin: 10px 20px;
+  border: 2px solid #22bdaf;
+}
+/* line 97, ../sass/main.scss */
+.grid .employee-summary {
+  padding: 15px 10px;
+}
+/* line 99, ../sass/main.scss */
+.grid .employee-summary img {
+  width: 90px;
+  height: 90px;
+  float: right;
+  border: 1px solid #3d3c3e;
+}
+/* line 105, ../sass/main.scss */
+.grid .employee-summary span {
+  font-size: 1.2em;
+  display: block;
+}
+/* line 109, ../sass/main.scss */
+.grid .employee-summary button {
+  margin-top: 10%;
+}
+
+/* line 116, ../sass/main.scss */
+.ng-modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.3;
+}
+
+/* line 128, ../sass/main.scss */
+.ng-modal-dialog {
+  display: none;
+  position: fixed;
+  width: 50%;
+  z-index: 1000;
+  top: 25%;
+  left: 25%;
+  background-color: #d7d7d7;
+}
+
+/* line 138, ../sass/main.scss */
+.ng-modal-dialog-content {
+  line-height: 1.8em;
+  text-align: left;
+  border: 2px solid #3d3c3e;
+  padding: 10px 20px;
+}
+/* line 143, ../sass/main.scss */
+.ng-modal-dialog-content h2 {
+  background: #22bdaf;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-align: center;
+}
+/* line 150, ../sass/main.scss */
+.ng-modal-dialog-content img {
+  float: right;
+  margin: 10px;
+  border: 2px solid #3d3c3e;
+  -webkit-border-radius: 5em;
+  -moz-border-radius: 5em;
+  -ms-border-radius: 5em;
+  -o-border-radius: 5em;
+  border-radius: 5em;
+}
+/* line 156, ../sass/main.scss */
+.ng-modal-dialog-content span.stat {
+  font-weight: bold;
+}
+
+/* line 161, ../sass/main.scss */
+.ng-modal-close {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* line 169, ../sass/main.scss */
+.ng-hide {
+  display: none;
+}
+
+/* line 173, ../sass/main.scss */
+footer {
+  height: 150px;
+  color: white;
+  background-color: #3d3c3e;
+  padding: 10px 10px 0;
+}
+/* line 178, ../sass/main.scss */
+footer #copy {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}

@@ -1,10 +1,10 @@
-<div class="records">
+<div class="records" ng-class="{grid: showAsGrid, list: !showAsGrid}">
 	<div class="employee" id="employee-{{e.Id}}" ng-repeat="e in employees | orderBy:orderProp">
-		<div class="employee-summary">
+		<div class="employee-summary" ng-class="{first: $first}">
 			<img ng-src="{{e.AvatarUrl}}" alt="{{e.FirstName}} {{e.LastName}}"/>
 			<span>{{e.FirstName}} {{e.LastName}}</span>
 			<span>{{e.Location}}</span>
-			<button ng-click="toggleModal(e.Id)">Show Details</button>
+			<span><button class="details-toggle" ng-click="toggleModal(e.Id)">Show Details</button></span>
 		</div>
 		<modal-dialog>
 			<div>
